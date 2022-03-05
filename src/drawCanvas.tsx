@@ -8,7 +8,7 @@ const DrawCanvas: React.FC = () => {
   return (
     <React.Suspense fallback={<span>loading...</span>}>
       <Fiber.Canvas>
-      {/* <Drei.PerspectiveCamera makeDefault /> */}
+      <Drei.PerspectiveCamera makeDefault={true} />
       <Drei.OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
       <Drei.Stage>
         <Model />
